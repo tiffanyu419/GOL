@@ -1,5 +1,4 @@
 /* Tiffany Yu, Ivan Lomeli
- * CS 31 Lab 6: Game of Life.
  * Given a correctly formatted text file, this program plays the Game of Life
  * based on the information provided from the text file. The user must specify
  * the text file they'd like to use and can choose whether they'd like to see
@@ -65,12 +64,12 @@ int main (int argc, char **argv) {
   gettimeofday(&start, NULL);
   if (option == 0) {
     printf("\n\n");
-    for (int i = 0; i < 1; i++) {
+    for (int i = 0; i < 10000; i++) {
       GOL(matrix, row, column);
     }
   }
   if (option == 1) {
-    for (int j=0; j< 3; j++) { //TODO
+    for (int j=0; j< 10000; j++) { 
       printf("\n");
       GOL(matrix, row, column);
       system("clear");
